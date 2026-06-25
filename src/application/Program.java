@@ -4,6 +4,7 @@ import entities.Department;
 import entities.Worker;
 import entities.enums.WorkerLevel;
 
+import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class Program {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         System.out.print("Enter department's name: ");
         String departmentName = sc.nextLine();
